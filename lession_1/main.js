@@ -1,0 +1,1 @@
+alert("Hello word, we are here JavaScript")
