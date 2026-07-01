@@ -52,3 +52,5 @@ var o = 2;
 var fullName1 = "Minh 'Khanhs"
 
 console.log(fullName1)
+
+
