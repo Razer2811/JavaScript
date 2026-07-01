@@ -42,3 +42,13 @@ var j = false
 var f = h || j
 var k = h && j
 console.log(f,k);
+
+// Kiểu dữ liệu
+// Number type
+var v = 1;
+var o = 2;
+
+// String type
+var fullName1 = "Minh 'Khanhs"
+
+console.log(fullName1)
