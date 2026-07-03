@@ -1,5 +1,5 @@
 Quá trình tư học JS cho quá trình làm dự án cá nhân về react native theo từng lession tương ứng với buổi
-# Buổi 1  : Biến, comments, Thuật ngữ Built-in
+Buổi 1  : Biến, comments, Thuật ngữ Built-in
 Buổi 2 : Toán tử, kiểu dữ liệu, Truthy và Falsy
 Buổi 3 : Làm việc với hàm
 Buổi 4 : Chuỗi trong JavaScript
