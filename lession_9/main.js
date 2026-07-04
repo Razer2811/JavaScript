@@ -84,9 +84,17 @@ var myArr = [
 
  // Vòng lặp do...While
 
- var i = 0;
+var i = 0;
+var isSuccess  = false; 
+
  do{
     i++;
 
-    console.log(i)
- }while(i < 10)
+    console.log('Nap the lan ' + i );
+    // Thanh cong
+    if(true){
+        isSuccess = true;
+    }
+
+
+ }while(!isSuccess && i < 3);
