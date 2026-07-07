@@ -37,3 +37,40 @@ var firstProductElement = document.querySelector('.product');
 
 // Lấy tất cả các thẻ button
 var buttonElements = document.querySelectorAll('button');
+
+
+// DOM attributes
+var headingElement = document.querySelector('h1');
+console.log(headingElement)
+// thêm attributes vào element 
+headingElement.title = 'heading'
+
+var element = document.querySelector('h1');
+element.title = "F8 - Học lập trình để đi làm";
+
+element.setAttribute('data-title', "F8 - Học lập trình để đi làm");
+
+// var element2 = document.querySelector('a');
+
+// element2.setAttribute('href', "https://fullstack.edu.vn/");
+
+// element2.setAttribute('target', "_blank");
+
+
+// InnerText và textContent
+var headingElement1 = document.querySelector('.heading');
+
+console.log(headingElement1.innerText);
+
+headingElement1.textContent = "new heading"
+
+
+// InnerHTML va OuterHTML 
+var boxElement = document.querySelector('.box');
+
+boxElement.innerHTML = '<h1 title="Heading">New Heading</h1>';
+
+console.log(boxElement.innerHTML);
+
+
+
