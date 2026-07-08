@@ -1,7 +1,3 @@
-// ClassList Properties
-// add
-// contains
-// remove
-// toggle
-var boxElement = document.querySelector('.box');
-console.log(boxElement.classList);
+// DOM events
+//1. attributes events 
+//2. assign event 
