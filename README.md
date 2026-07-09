@@ -18,4 +18,4 @@ Buổi 15 : Các bài thực hành
 Buổi 16 : Form validation 1
 Buổi 17 : form validation 2
 
-Process : buổi 12 (70%)
+Process : buổi 12 (77%)
