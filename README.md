@@ -19,3 +19,5 @@ Buổi 16 : Form validation 1
 Buổi 17 : form validation 2
 sau khóa này mình sẽ tự học về reactJS để có nền tảng học về react native
 Process : buổi 12 (77%)
+
+たいへん　ですね
