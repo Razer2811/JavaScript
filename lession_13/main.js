@@ -29,7 +29,17 @@ var promise = new Promise(
 promise
     .then(function(){
         // được gọi khi trong promise resolve() được nhận
-        console.log("Success")
+        return 1;
+    })
+    .then(function(data){
+        // được gọi khi trong promise resolve() được nhận
+        console.log(data);
+        return 2;
+    })
+    .then(function(data){
+        // được gọi khi trong promise resolve() được nhận
+        console.log(data)
+        return 3;
     })
     .catch(function(){
         // được gọi khi trong promise reject() được nhận
@@ -42,4 +52,27 @@ promise
 
 
 // Promise(chain)
+function sleep(ms){
+    return new Promise(function(resolve){
+        setTimeout(resolve, ms);
+    });
+}
 
+sleep(1000)
+    .then(function(){
+        console.log(1);
+        return sleep(1000);
+    })
+    .then(function(){
+        console.log(2);
+        return sleep(1000);
+    })
+    .then(function(){
+        console.log(3);
+        return sleep(1000);
+    })
+    .then(function(){
+        console.log(4);
+        return sleep(1000);
+    })
+    
