@@ -76,3 +76,14 @@ sleep(1000)
         return sleep(1000);
     })
     
+// Promise methods (resolve, reject, all)
+
+var promise = Promise.resolve("Thanh cong");
+
+promise
+    .then(function(result){
+        console.log("result : " + result);
+    })
+    .catch(function(err){
+        console.log("err : "+err)
+    })
