@@ -1,3 +1,5 @@
+
+
 var users = [
     {
         id : 1,
@@ -54,16 +56,30 @@ function getUserById(usersId){
     });
 }
 
-// getComments()
-//     .then(function(comments){
-//         var usersId = comments.map(function(comment){
-//             return comment.users_id;
-//         });
-//         console.log(usersId)
-//     });
-    
+getComments()
+    .then(function(comments){
+        var usersId = comments.map(function(comment){
+            return comment.users_id;
+        });
 
-getUserById([1, 2])
-    .then(function(users){
-        console.log(users)
+        return getUserById(usersId)
+            .then(function(users){
+                return {
+                    users: users,
+                    comments: comments,
+                };
+            });
     })
+    .then(function(data){
+        var commentBlock = document.getElementById('comment-block');
+
+        var html = '';
+        data.comments.forEach(function(comment){
+            var user = data.users.find(function(user){
+                return user.id === comment.users_id;
+            });
+            html += `<li>${user.name} : ${comment.content}</li>`;
+        });
+        commentBlock.innerHTML = html;
+    });
+    
