@@ -1,16 +1,32 @@
-var courseApi = 'http://localhost:3000/course';
+var listCoursesBlock = document.querySelector('#list-courses');
+var coursesAPI = 'http://localhost:3000/course';
 
-fetch(courseApi)
-    .then(function (response) {
-        if (!response.ok) {
-            throw new Error('Lỗi HTTP: ' + response.status);
-        }
+function start() {
+    getCourses(renderCourses);
+}
 
-        return response.json();
-    })
-    .then(function (courses) {
-        console.log(courses);
-    })
-    .catch(function (error) {
-        console.error('Không lấy được courses:', error);
+start();
+
+function getCourses(callback) {
+    fetch(coursesAPI)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(callback)
+        .catch(function (error) {
+            console.error(error);
+        });
+}
+
+function renderCourses(courses) {
+    var htmls = courses.map(function (course) {
+        return `
+            <li class="course-item-${course.id}">
+                <h4>${course.name}</h4>
+                <p>${course.description || course.decription}</p>
+            </li>
+        `;
     });
+
+    listCoursesBlock.innerHTML = htmls.join('');
+}
