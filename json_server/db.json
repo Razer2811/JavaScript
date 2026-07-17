@@ -1,9 +1,15 @@
 {
-    "course" : [
-        {
-            "id" : 1,
-            "name" : "Kiến thức cơ bản cho người mới bắt đầu",
-            "decription" : "Kiến thức cơ bản dành cho người mới, không phân biệt bạn theo FE hay BE hay Devops"
-        }
-    ]
+  "course": [
+    {
+      "name": "Kiến thức cơ bản cho người mới bắt đầu",
+      "decription": "Kiến thức cơ bản dành cho người mới, không phân biệt bạn theo FE hay BE hay Devops",
+      "id": "1"
+    },
+    {
+      "name": "Xây dựng web với NodeJS & ExpressJS 2",
+      "description": "1 Xây dựng web trong thực tế",
+      "id": "yHeDm-FDkgU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
