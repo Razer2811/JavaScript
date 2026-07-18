@@ -1,14 +1,30 @@
 {
   "course": [
     {
-      "name": "Kiến thức cơ bản cho người mới bắt đầu",
-      "decription": "Kiến thức cơ bản dành cho người mới, không phân biệt bạn theo FE hay BE hay Devops",
-      "id": "1"
+      "name": "HTML Css từ Zero đến Hero Academy",
+      "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee Victory.",
+      "id": "1",
+      "decription": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee Victory."
     },
     {
-      "name": "Xây dựng web với NodeJS & ExpressJS 2",
-      "description": "1 Xây dựng web trong thực tế",
-      "id": "yHeDm-FDkgU"
+      "name": "Xây dựng web với NodeJS & ExpressJS",
+      "description": "Xây dựng web trong thực tế",
+      "id": "2"
+    },
+    {
+      "name": "HTML CSS từ Zero đến Hero",
+      "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.",
+      "id": "3"
+    },
+    {
+      "name": "HTML CSSS TIps",
+      "decription": "không bit viet gi",
+      "id": "7LZ8K_3Gt5E"
+    },
+    {
+      "name": "ádjhash",
+      "decription": "áhkjsdfsd",
+      "id": "PCsEP_Nui3g"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
